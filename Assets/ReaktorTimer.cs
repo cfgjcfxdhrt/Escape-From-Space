@@ -17,7 +17,8 @@ public class ReaktorTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CurrentTime > 0){
+        if (CurrentTime > 0)
+        {
             CurrentTime -= Time.deltaTime;
             float min = Mathf.FloorToInt(CurrentTime / 60);
             float sec = Mathf.FloorToInt(CurrentTime % 60);
