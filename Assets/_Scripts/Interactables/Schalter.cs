@@ -13,7 +13,12 @@ public class Schalter : MonoBehaviour, IInteractable
 
     public void Interact()
     {
+        if (isOpen){
+            animator.SetTrigger("schliessen");
+        }
+        else{
+            animator.SetTrigger("oeffnen");
+        }
         isOpen = !isOpen;
-        animator.SetTrigger("oeffnen");
     }
 }
