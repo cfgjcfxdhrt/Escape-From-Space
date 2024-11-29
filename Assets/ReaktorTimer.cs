@@ -21,7 +21,7 @@ public class ReaktorTimer : MonoBehaviour
             CurrentTime -= Time.deltaTime;
             float min = Mathf.FloorToInt(CurrentTime / 60);
             float sec = Mathf.FloorToInt(CurrentTime % 60);
-            print(sec);
+            //print(sec);
             ReaktorTimerText.text = string.Format(min.ToString() + " : " + sec.ToString());
             //ReaktorTimerText.text = string.Format("{0:00} : {0:00}", min, sec);
         }
